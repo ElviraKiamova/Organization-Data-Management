@@ -1,10 +1,5 @@
-/* @import url("./fonts/style.css");  
+@import url("./fonts/style.css");  
 
-* {
-  outline-width: 1px;
-  outline-style: solid;
-  outline-color: red;
-} */
 
 * {
   box-sizing: border-box;
@@ -43,7 +38,6 @@ body {
   margin: 0;
   padding: 0 30px 0 0;
 }
-
 
 .header {
   display: flex;
@@ -88,11 +82,21 @@ body {
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
   width: 290px;
+  max-width: 290px;
   padding-bottom: 24px;
   font-size: 13px;
   line-height: 15px;
   letter-spacing: 1px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+
+.sidebar_collapsed {
+  width: 50px;
+  max-width: 50px;
 }
 
 .sidebar__list {
@@ -105,10 +109,22 @@ body {
   display: flex;
   align-items: center;
   height: 63px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+.sidebar__item_active {
+  background-color: #172139;
+  color: #F4F4F4;
 }
 
 .sidebar__text {
+  width: 243.5px;
   margin: 0;
+}
+
+.sidebar__text_hidden {
+  display: none;
 }
 
 .sidebar__img {
@@ -117,23 +133,33 @@ body {
   margin: 0 16.5px 0 15px;
 }
 
+.sidebar__hide-box {
+  display: flex;
+  align-items: center;
+  margin-left: 70px;
+ cursor: pointer;
+}
+
 .sidebar__hide {
-  position: relative;
-  margin: 0 0 0 67px;
-  padding-left: 26.5px;
+  margin: 0;
   color: #FF6600;
 }
 
-.sidebar__hide::before {
-  display: inline-block;
-  position: absolute;
-  content: '';
-  width: 7px;
+.sidebar__hide-img {
+  width: 10px;
   height: 10px;
-  background-image: url('./assets/checkmark.svg');
-  background-size: contain;
-  background-repeat: no-repeat;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  margin-right: 14px;
+  transition: transform 0.3s ease;
 }
+
+.sidebar__hide-img_rotate {
+  transform: rotate(180deg);
+}
+
+
+
+/* * {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: red;
+} */
