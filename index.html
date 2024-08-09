@@ -67,7 +67,24 @@
             <button class="locations__button">Настройки</button>
           </div>
           <button class="locations__button-create">СОЗДАТЬ ЛОКАЦИЮ</button>
-          
+        </section>
+        <section class="search">
+          <form class="search__form" action="#" method="get" autocomplete="off">
+            <button class="search__button" type="submit" aria-label="Синхронизация">
+              <img src="./assets/synchronize.svg" alt="Синхронизация">
+              СИНХРОНИЗАЦИЯ
+              <span>(17.05.2024 15:23:21)</span>
+            </button>
+          <div class="search__box">
+            <label class="search__label_checkbox" for="checkbox">
+              <input class="search__input-checkbox" type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+              <span class="search__input-title">Поиск по точному вхождению</span>
+            </label>
+            <label class="search__label" for="search">
+              <input class="search__input" type="search" id="search" name="search" placeholder="ПОИСК" autocomplete="off">
+            </label>
+          </div>
+          </form>
         </section>
       </div>
     </main>

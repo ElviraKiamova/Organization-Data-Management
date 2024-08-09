@@ -17,8 +17,9 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   min-height: 100vh;
-  margin: 0;
+  margin: 0 auto;
   font-family: Futura PT, sans-serif;
   font-size: 17px;
   font-weight: 400;
@@ -27,15 +28,16 @@ body {
 }
 
 .content {
+  width: 100%;
   margin: 0;
 }
 
 .container {
   display: flex;
-  justify-content: start;
+  width: 1920px;
   max-width: 1890px;
   margin: 0;
-  padding: 0 30px 0 0;
+  padding: 0;
 }
 
 
@@ -193,6 +195,7 @@ body {
   font-weight: 500;
   line-height: 17.95px;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .locations__button_active {
@@ -218,11 +221,120 @@ body {
 
 
 
-* {
+.search {
+  margin-left: auto;
+}
+
+.search form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.search__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 336px;
+  height: 50px;
+  margin: 80px 0 25px;
+  border: none;
+  border-radius: 5px; 
+  background-color: #172139;
+  color: #FFFFFF;
+  font-family: Futura PT;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.95px;
+  letter-spacing: 0.1em;
+}
+
+.search__button span {
+  margin-left: 10px;
+  font-family: Futura PT;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12.82px;
+  letter-spacing: 0.1em;
+}
+
+.search__button img {
+  margin-right: 10px;
+}
+
+.search__input {
+  width: 300px;
+  height: 50px;
+  margin-left: 22px;
+  padding: 13px 40px 10px 37px;
+  background-image: url('./assets/magnifier.svg');
+  background-position: 19px center;
+  background-repeat: no-repeat;
+  background-size: 13.5px;    
+  font-family: Futura PT;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.95px;
+  letter-spacing: 0.1em;
+  color: #AEAEAE;
+  border: none;
+}
+
+.search__input-title {
+  position: relative;
+  padding-left: 29px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.07px;
+}
+
+.search__input-checkbox {
+  display: none;
+}
+
+
+.search__input-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 1px solid #AEAEAE;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  transition: background 0.2s ease;
+}
+
+.search__input-checkbox:checked + .search__input-title::before {
+  background-color: #FF6600;
+  border-color: #FF6600;
+}
+
+.search__input-checkbox:checked + .search__input-title::after {
+  content: '';
+  position: absolute;
+  left: 8px;
+  top: 4px;
+  width: 3px;
+  height: 5px;
+  border: solid #FFFFFF;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+
+
+
+
+/* * {
   outline-width: 1px;
   outline-style: solid;
   outline-color: red;
-}
+} */
 
 
 
