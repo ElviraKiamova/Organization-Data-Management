@@ -1,0 +1,66 @@
+@import url("./fonts/style.css");  
+
+/* * {
+  outline-width: 1px;
+  outline-style: solid;
+  outline-color: red;
+} */
+
+body {
+  margin: 0;
+}
+
+.page {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  font-family: Futura PT, sans-serif;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21.79px;
+  color: #172139;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1920px;
+  height: 79px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.header__box {
+  position: relative;
+  width: 250px;
+  height: 42px;
+}
+
+.header__tie {
+  position: absolute;
+  left: -15px;
+  top: 7px;
+}
+
+.header__option {
+  position: absolute;
+  left: 12px;
+  top: -3px;
+  width: 37px;
+  height: 15px;
+  border-radius: 3.62px;
+  text-align: center;
+  background-color: #FF6600;
+  color: #FFFFFF;
+  font-family: Futura PT;
+  font-size: 12.08px;
+  font-weight: 450;
+  line-height: 15.48px;
+}
+
+.header__nav {
+  display: flex;
+}
