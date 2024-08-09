@@ -4,8 +4,18 @@ const sidebarBox = document.querySelector('.sidebar__hide-box');
 const hideButton = document.querySelector('.sidebar__hide');
 const sidebarTexts = document.querySelectorAll('.sidebar__text');
 const sidebarHideImg = document.querySelector('.sidebar__hide-img');
+const buttonsBox = document.querySelector('.locations__button-box');
+const locationButtonsBox = document.querySelectorAll('.locations__button');
 
-console.log(sidebarHideImg);
+
+buttonsBox.addEventListener('click', (evt) => {
+  locationButtonsBox.forEach((button) => {
+    button.classList.remove('locations__button_active');
+  });
+  if (evt.target.classList.contains('locations__button')) {
+    evt.target.classList.add('locations__button_active');
+  } 
+});
 
 sidebarItems.forEach((item) => {
   item.addEventListener('click', (evt) => {
@@ -18,9 +28,9 @@ sidebarItems.forEach((item) => {
 
 
 sidebarBox.addEventListener('click', () => {
-    sidebarTexts.forEach(text => {
-      text.classList.toggle('sidebar__text_hidden');
-    });
+  sidebarTexts.forEach(text => {
+    text.classList.toggle('sidebar__text_hidden');
+  });
   
   const isCollapsed = sidebar.classList.toggle('.sidebar_collapsed');
 
@@ -34,5 +44,3 @@ sidebarBox.addEventListener('click', () => {
     sidebarHideImg.classList.remove('sidebar__hide-img_rotate');
   }
 });
-
-

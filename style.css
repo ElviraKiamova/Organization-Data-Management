@@ -1,4 +1,4 @@
-@import url("./fonts/style.css");  
+
 
 
 * {
@@ -21,7 +21,7 @@ body {
   margin: 0;
   font-family: Futura PT, sans-serif;
   font-size: 17px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 21.79px;
   color: #172139;
 }
@@ -32,12 +32,14 @@ body {
 
 .container {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   max-width: 1890px;
   margin: 0;
   padding: 0 30px 0 0;
 }
+
+
+
 
 .header {
   display: flex;
@@ -81,6 +83,15 @@ body {
   display: flex;
 }
 
+.header__img {
+  cursor: pointer;
+}
+
+
+
+
+
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -119,7 +130,6 @@ body {
 }
 
 .sidebar__text {
-  width: 243.5px;
   margin: 0;
 }
 
@@ -158,8 +168,62 @@ body {
 
 
 
-/* * {
+
+
+
+.locations {
+  padding-left: 30px;
+  background-color: #F4F4F4;
+}
+
+.locations__title {
+  margin: 35px 0 27px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: 0.5px;
+}
+
+.locations__button {
+  margin-right: 16px;
+  padding: 9.5px 29px;
+  border-radius: 5px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17.95px;
+  cursor: pointer;
+}
+
+.locations__button_active {
+  background-color: #172139;
+  color: #FFFFFF;
+}
+
+.locations__button-create {
+  width: 286px;
+  height: 50px;
+  margin: 31px 0 44px;
+  border: none;
+  border-radius: 5px;
+  background-color: #172139;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 16.41px;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+}
+
+
+
+
+
+* {
   outline-width: 1px;
   outline-style: solid;
   outline-color: red;
-} */
+}
+
+
+
+@import url("./fonts/style.css");  
