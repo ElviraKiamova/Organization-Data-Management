@@ -1,10 +1,18 @@
-@import url("./fonts/style.css");  
+/* @import url("./fonts/style.css");  
 
-/* * {
+* {
   outline-width: 1px;
   outline-style: solid;
   outline-color: red;
 } */
+
+* {
+  box-sizing: border-box;
+ }
+
+ html {
+  scroll-behavior: smooth; 
+}
 
 body {
   margin: 0;
@@ -13,13 +21,27 @@ body {
 .page {
   width: 100%;
   display: flex;
+  flex-direction: column;
   min-height: 100vh;
   margin: 0;
   font-family: Futura PT, sans-serif;
   font-size: 17px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 21.79px;
   color: #172139;
+}
+
+.content {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1890px;
+  margin: 0;
+  padding: 0 30px 0 0;
 }
 
 
@@ -63,4 +85,55 @@ body {
 
 .header__nav {
   display: flex;
+}
+
+.sidebar {
+  width: 290px;
+  padding-bottom: 24px;
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1px;
+}
+
+.sidebar__list {
+  margin: 32px 0 24px 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sidebar__item {
+  display: flex;
+  align-items: center;
+  height: 63px;
+}
+
+.sidebar__text {
+  margin: 0;
+}
+
+.sidebar__img {
+  width: 15px;
+  height: 15px;
+  margin: 0 16.5px 0 15px;
+}
+
+.sidebar__hide {
+  position: relative;
+  margin: 0 0 0 67px;
+  padding-left: 26.5px;
+  color: #FF6600;
+}
+
+.sidebar__hide::before {
+  display: inline-block;
+  position: absolute;
+  content: '';
+  width: 7px;
+  height: 10px;
+  background-image: url('./assets/checkmark.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
