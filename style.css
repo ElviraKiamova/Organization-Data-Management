@@ -14,6 +14,7 @@ body {
 }
 
 .page {
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -324,6 +325,7 @@ body {
 
 .search {
   margin-left: auto;
+  padding-bottom: 877px;
 }
 
 .search form {
@@ -431,7 +433,69 @@ body {
 
 
 
-/* * {
+
+.footer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer__text {
+  margin: 33px 0;
+  color: #A5A5A5;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 14.63px;
+}
+
+.footer__text:first-child {
+  margin-right: 30px
+}
+
+.footer__link {
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  padding-left: 35px; 
+  color: #FF6600;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19.5px;
+  text-decoration: none;
+}
+
+.footer__link::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 55%;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 19px;
+  background-image: url("./assets/documentation.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.footer__link::after {
+  content: ''; 
+  position: absolute;
+  height: 1px;
+  bottom: 1px;
+  left: 30px;
+  right: 0;
+  background: #FF6600;
+}
+
+
+
+
+/* 
+* {
   outline-width: 1px;
   outline-style: solid;
   outline-color: red;
