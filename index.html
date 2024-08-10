@@ -162,6 +162,37 @@
       <p class="footer__text">Последняя передача  20.09.2021 18:38:21</p>
       <a class="footer__link" href="#">Документация</a>
     </footer>
+
+    <section class="popup create">
+      <form class="popup__form">
+          <h3 class="popup__title">Создать локацию</h3>
+          <label class="popup__label">
+            <input class="popup__input" type="text" name="description" value="Название">
+          </label>
+          <label class="popup__label">
+            <input class="popup__input" type="text" name="barcode" value="Штрихкод">
+          </label>
+          <label class="popup__label">
+            <input class="popup__input" type="text" name="RFID" value="RFID">
+          </label>
+          <label class="popup__label" for="enclosure"></label>
+          <select class="popup__select" id="enclosure">
+              <option value="1">Вложенность</option>
+              <option value="2">Локация 2</option>
+              <option value="3">Локация 3</option>
+          </select>
+          <p class="popup__text">Виртуальная локация</p>
+          <p class="popup__text">Локация для утерь</p>
+          <div class="popup__box-button">
+            <button class="popup__button popup__button_black">
+              <img class="popup__button-img" src="./assets/disk.svg" alt="">
+              Создать
+            </button>
+            <button class="popup__button">Отменить</button>
+          </div>
+      </form>
+  </section>
+
   </div>
   <script src="./index.js"></script>
 </body>

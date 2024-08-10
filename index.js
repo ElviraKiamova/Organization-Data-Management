@@ -6,6 +6,44 @@ const sidebarTexts = document.querySelectorAll('.sidebar__text');
 const sidebarHideImg = document.querySelector('.sidebar__hide-img');
 const buttonsBox = document.querySelector('.locations__button-box');
 const locationButtonsBox = document.querySelectorAll('.locations__button');
+const buttonCreate = document.querySelector('.locations__button-create');
+
+const sectionCreate = document.querySelector('.create');
+const listPopups = document.querySelectorAll(".popup");
+
+listPopups.forEach((popup) => {
+  popup.addEventListener("click", function(event) {
+    if(event.target === event.currentTarget) {
+       closePopup(popup);
+    }
+  });
+});
+
+const openForm = (popup) => {
+  popup.classList.add('open');
+  document.addEventListener('keydown', closeEsc)
+}
+buttonCreate.addEventListener("click", () => {
+  openForm(sectionCreate);
+});
+
+const closeForm = (popup) => {
+  popup.classList.remove('open');
+  document.removeEventListener('keydown',  closeEsc);
+}
+
+const closeEsc = (evt) => {
+  if (evt.key === 'Escape') {
+    const openPopup = document.querySelector('.open');
+    closeForm(openPopup); 
+  }
+} 
+
+
+
+
+
+
 
 
 buttonsBox.addEventListener('click', (evt) => {
