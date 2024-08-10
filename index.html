@@ -62,7 +62,7 @@
         <section class="locations">
           <h2 class="locations__title">Локации / Все локации</h2>
           <div class="locations__button-box">
-            <button class="locations__button">Все локации</button>
+            <button class="locations__button locations__button_active">Все локации</button>
             <button class="locations__button">Импорт/Экспорт</button>
             <button class="locations__button">Настройки</button>
           </div>
@@ -186,9 +186,44 @@
           <div class="popup__box-button">
             <button class="popup__button popup__button_black">
               <img class="popup__button-img" src="./assets/disk.svg" alt="">
-              Создать
+              СОЗДАТЬ
             </button>
-            <button class="popup__button">Отменить</button>
+            <button class="popup__button">ОТМЕНИТЬ</button>
+          </div>
+      </form>
+  </section>
+
+ <section class="popup change">
+      <form class="popup__form">
+          <h3 class="popup__title">Изменить локацию %название%</h3>
+          <label class="popup__label">Название
+            <input class="popup__input" type="text" name="description" value="Локация 11">
+          </label>
+          <label class="popup__label">Штрихкод
+            <input class="popup__input" type="text" name="barcode" value="1123123123123">
+          </label>
+          <label class="popup__label">RFID
+            <input class="popup__input" type="text" name="RFID" value="1123123123123">
+          </label>
+          <label class="popup__label">Вложенность
+            <select class="popup__select" >
+              <option value="1">Локация 1</option>
+              <option value="2">Локация 2</option>
+              <option value="3">Локация 3</option>
+          </select>
+          </label>
+          <p class="popup__text">Виртуальная локация</p>
+          <p class="popup__text">Локация для утерь</p>
+          <div class="popup__box-button">
+            <button class="popup__button">
+              <img class="popup__button-img" src="./assets/close.svg" alt="">
+              УДАЛИТЬ
+            </button>
+            <button class="popup__button">ОТМЕНИТЬ</button>
+            <button class="popup__button popup__button_black">
+              <img class="popup__button-img" src="./assets/disk.svg" alt="">
+              СОХРАНИТЬ
+            </button>
           </div>
       </form>
   </section>
