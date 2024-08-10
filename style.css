@@ -227,9 +227,22 @@ body {
   list-style-type: none;
 }
 
+.locations__list_sub-department {
+  margin-left: 45px;
+}
+
 .locations__item {  
+  margin-bottom: 17px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.locations__item-box {  
   display: flex;
   height: 17px;
+  margin-bottom: 25px;
+  font-family: Futura PT, sans-serif;
   font-size: 15px;
   font-weight: 600;
   line-height: 18px;
@@ -260,6 +273,19 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 17.07px;
+  cursor: pointer;
+}
+
+.locations__loss {
+  margin-right: 30px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+}
+
+.locations__loss_bold {
+  font-weight: 700;
 }
 
 .locations__remove {
@@ -268,6 +294,7 @@ body {
   font-size: 14px;
   font-weight: 500;
   line-height: 17.07px;
+  cursor: pointer;
 }
 
 .locations__edit::before {
