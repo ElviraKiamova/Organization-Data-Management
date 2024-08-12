@@ -1,6 +1,3 @@
-
-
-
 * {
   box-sizing: border-box;
  }
@@ -180,11 +177,10 @@ body {
 }
 
 .locations__title {
-  margin: 35px 0 27px;
-  font-size: 30px;
-  font-weight: 600;
-  line-height: 25px;
-  letter-spacing: 0.5px;
+  margin: 32px 0 23px;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 32px;
 }
 
 .locations__button {
@@ -242,11 +238,15 @@ body {
 .locations__item-box {  
   display: flex;
   height: 17px;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   font-family: Futura PT, sans-serif;
   font-size: 15px;
   font-weight: 600;
   line-height: 18px;
+}
+
+.locations__item-box_indent {  
+  margin-bottom: 20px;
 }
 
 .locations__close {
@@ -350,6 +350,7 @@ body {
   font-weight: 500;
   line-height: 17.95px;
   letter-spacing: 0.1em;
+  cursor: pointer;
 }
 
 .search__button span {
@@ -381,6 +382,7 @@ body {
   letter-spacing: 0.1em;
   color: #AEAEAE;
   border: none;
+  cursor: pointer;
 }
 
 .search__input-title {
@@ -409,7 +411,7 @@ body {
   border: 1px solid #AEAEAE;
   border-radius: 3px;
   background-color: #FFFFFF;
-  transition: background 0.2s ease;
+  transition: background-color 0.2s ease;
 }
 
 .search__input-checkbox:checked + .search__input-title::before {
@@ -531,8 +533,8 @@ body {
 
 .popup__input {
   width: 360px;
-  height: 50px;
-  margin-bottom: 17px;
+  height: 49px;
+  margin: 2px 0 19px;
   padding: 0 25px;
   border: 1px solid #E1E1E1;
   border-radius: 5px;
@@ -542,6 +544,11 @@ body {
   font-weight: 400;
   line-height: 16px;
   cursor: pointer;
+}
+
+.create .popup__input {
+  margin: 0 0 19px;
+  padding: 0 25px;
 }
 
 .popup__select {
@@ -553,7 +560,7 @@ body {
   border-radius: 5px;
   background-image: url("./assets/check-mark45.svg");
   background-repeat: no-repeat;
-  background-position: right 30px center;
+  background-position: right 25px center;
   background-size: 10px 7px;
   color: #AEAEAE;
   font-family: Galdeano;
@@ -563,6 +570,10 @@ body {
   cursor: pointer;
   appearance: none;
 }
+ 
+.popup__select:last-child {
+  padding: 8px 25px 0;
+}
 
 .popup__text {
   width: 345px;
@@ -570,17 +581,26 @@ body {
   margin: 0 0 17px;
   color: #172139;
   font-family: Galdeano;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 18px;
-
- position: relative; /* Необходимо для позиционирования псевдоэлемента */
-            padding-right: 20px;
+  text-align: justify;
+  position: relative;
+  padding: 8px 20px 0 0;
 }
 
+.create .popup__text {
+  padding: 3px 20px 0 0;
+}
+
+.create .popup__text:last-child {
+  margin: 0 0 16px;
+}
+
+
 .popup__text::after {
-  width: 24px;
-  height: 24px;
+  width: 23px;
+  height: 23px;
   background-color: #FF6600;
   border-radius: 50%;
   content: '';
@@ -606,6 +626,7 @@ body {
   font-size: 14px;
   line-height: 16.41px;
   letter-spacing: 0.1em;
+  cursor: pointer;
 }
 
 .popup__button_black {
@@ -649,7 +670,4 @@ body {
   outline-style: solid;
   outline-color: red;
 } */
-
-
-
-@import url("./fonts/style.css");  
+ 

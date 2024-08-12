@@ -9,6 +9,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Galdeano&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="icon" href="./assets/tie.svg">
   <title>Управление данными организации</title>
@@ -45,7 +49,7 @@
               <img class="sidebar__img" src="./assets/notifications.svg" alt="Колокольчик">
               <p class="sidebar__text">Уведомления</p>
             </li>
-            <li class="sidebar__item">
+            <li class="sidebar__item sidebar__item_active">
               <img class="sidebar__img" src="./assets/locations.svg" alt="Локация">
               <p class="sidebar__text">Локации</p>
             </li>
@@ -99,7 +103,7 @@
                   </div>
                   <ul class="locations__list locations__list_sub-department">
                     <li class="locations__item">
-                      <div class="locations__item-box">
+                      <div class="locations__item-box locations__item-box_indent">
                         <img class="locations__ellipsis" src="./assets/ellipsis.svg" alt="Троеточие">
                         Подподотдел 1
                         <p>2</p>
@@ -146,7 +150,7 @@
             </button>
           <div class="search__box">
             <label class="search__label_checkbox" for="checkbox">
-              <input class="search__input-checkbox" type="checkbox" id="checkbox" name="checkbox" value="checkbox">
+              <input class="search__input-checkbox" type="checkbox" id="checkbox" name="checkbox" value="checkbox" checked>
               <span class="search__input-title">Поиск по точному вхождению</span>
             </label>
             <label class="search__label" for="search">
