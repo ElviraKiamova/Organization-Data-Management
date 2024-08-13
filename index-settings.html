@@ -77,15 +77,16 @@
         </aside>
         <section class="settings">
           <h2 class="title">Настройки / Локации</h2>
-          <div class="settings__box-button">
-            <button class="settings__button">Имущество</button>
-            <button class="settings__button">Инвентаризация</button>
-            <button class="settings__button">Сотрудники</button>
-            <button class="settings__button settings__button_active">Локации</button>
-            <button class="settings__button">Уведомления</button>
-            <button class="settings__button">Справочники</button>
-            <button class="settings__button">Пользователь</button>
-          </div>
+          <form action="">
+            <div class="settings__box-button">
+              <button class="settings__button">Имущество</button>
+              <button class="settings__button">Инвентаризация</button>
+              <button class="settings__button">Сотрудники</button>
+              <button class="settings__button settings__button_active">Локации</button>
+              <button class="settings__button">Уведомления</button>
+              <button class="settings__button">Справочники</button>
+              <button class="settings__button">Пользователь</button>
+            </div>
           <h3 class="settings__title">Настройка полей таблицы</h3>
           <table class="settings__table">
             <thead class="settings__table-head">
@@ -349,7 +350,12 @@
               </tr>
             </tbody>
           </table>
-          <button class="settings__button-add"><img src="./assets/plus.svg" alt="">ДОБАВИТЬ ПОЛЕ</button>
+          <button class="settings__button-add"><img src="./assets/plus.svg" alt="Крестик">ДОБАВИТЬ ПОЛЕ</button>
+          <div class="settings__box-save">
+            <button><img src="./assets/disk.svg" alt="Флешка">СOХРАНИТЬ</button>
+            <button>ОТМЕНИТЬ</button>
+          </div>
+          </form>
         </section>
       </div>
     </main>

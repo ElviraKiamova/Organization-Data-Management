@@ -454,7 +454,7 @@ body {
 }
 
 .settings {
-  margin: 0 0 70px 50px;
+  margin: 0 0 0 50px;
 }
 
 .settings__box-button {
@@ -586,7 +586,7 @@ body {
 .settings__button-add {
   display: flex;
   align-items: center;
-justify-content: center;
+  justify-content: center;
   width: 255px;
   height: 50px;
   margin: 13px 0 0;
@@ -603,6 +603,43 @@ justify-content: center;
  
 .settings__button-add img {
   margin-right: 13px;
+}
+
+.settings__box-save {
+  display: flex; 
+  position: relative;
+  left: -3px;
+  margin-top: 85px;
+  padding-bottom: 15px;
+}
+
+.settings__box-save button {
+  width: 198px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  padding: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #172139;
+  color: #FFFFFF;
+  font-family: Futura PT;
+  font-size: 14px;
+  line-height: 16.41px;
+  letter-spacing: 0.17em;
+}
+
+.settings__box-save button:last-child {
+  width: 194px;
+  background-color: #FFFFFF;
+  color: #172139;
+  border: 1px solid #172139;
+}
+
+.settings__box-save button:first-child img {
+  margin-right: 10px;
 }
 
 
@@ -837,9 +874,9 @@ justify-content: center;
 
 
 
-/* * {
+* {
   outline-width: 1px;
   outline-style: solid;
   outline-color: red;
-} */
+}
  
