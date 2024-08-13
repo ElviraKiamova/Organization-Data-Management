@@ -1,5 +1,5 @@
 const sidebar = document.querySelector('.sidebar');
-const sidebarItems = document.querySelectorAll('.sidebar__item');
+const sidebarLinks = document.querySelectorAll('.sidebar__link');
 const sidebarBox = document.querySelector('.sidebar__hide-box');
 const hideButton = document.querySelector('.sidebar__hide');
 const sidebarTexts = document.querySelectorAll('.sidebar__text');
@@ -9,8 +9,9 @@ const locationButtonsBox = document.querySelectorAll('.locations__button');
 const buttonCreate = document.querySelector('.locations__button-create');
 const sectionСhange = document.querySelector('.change');
 const sectionCreate = document.querySelector('.create');
-const listPopups = document.querySelectorAll(".popup");
+const listPopups = document.querySelectorAll('.popup');
 const changeLocation = document.querySelector('.locations__edit');
+const sidebarLink = document.querySelector('sidebar__item_link');
 
 listPopups.forEach((popup) => {
   popup.addEventListener("click", function(event) {
@@ -61,8 +62,8 @@ buttonsBox.addEventListener('click', (evt) => {
 
 sidebarItems.forEach((item) => {
   item.addEventListener('click', (evt) => {
-    sidebarItems.forEach((element) => {
-      element.classList.remove('sidebar__item_active');
+    sidebarLinks.forEach((element) => {
+      element.classList.remove('sidebar__link_active');
     });
   item.classList.add('sidebar__item_active');
   });
