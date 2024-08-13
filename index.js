@@ -11,7 +11,8 @@ const sectionСhange = document.querySelector('.change');
 const sectionCreate = document.querySelector('.create');
 const listPopups = document.querySelectorAll('.popup');
 const changeLocation = document.querySelector('.locations__edit');
-const sidebarLink = document.querySelector('sidebar__item_link');
+const settingsBoxButtons = document.querySelector('.settings__box-button');
+const settingsButtons = document.querySelectorAll('.settings__button');
 
 listPopups.forEach((popup) => {
   popup.addEventListener("click", function(event) {
