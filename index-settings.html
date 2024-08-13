@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Управление данными организации">
+  <meta name="keywords" content="имущество, инвентаризация, сотрудники, уведомления">
+  <meta name="author" content="Эльвира Киямова">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Galdeano&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/tie.svg">
+  <title>Управление данными организации</title>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__box">
+        <img class="header__tie" src="./assets/tie.svg" alt="Оранжевый галстук">
+        <span class="header__option">v 2.01</span>
+        <h1></h1>
+      </div>
+      <nav class="header__nav">
+       <img class="header__img" src="./assets/Vector.svg" alt="Указатель">
+      </nav>
+    </header>
+    <main class="content">
+      <div class="container">
+        <aside class="sidebar">
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="./index.html">
+                <img class="sidebar__img" src="./assets/property.svg" alt="Квадрат">
+                <p class="sidebar__text">Имущество</p>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="./index.html">
+                <img class="sidebar__img" src="./assets/inventory.svg" alt="Список">
+                <p class="sidebar__text">Инвентаризация</p>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="./index.html">
+                <img class="sidebar__img" src="./assets/staff.svg" alt="Блокнот">
+                <p class="sidebar__text">Сотрудники</p>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="./index.html">
+                <img class="sidebar__img" src="./assets/notifications.svg" alt="Колокольчик">
+                <p class="sidebar__text">Уведомления</p>
+              </a>
+            </li>
+            <li class="sidebar__item">
+               <a class="sidebar__link" href="./index.html">
+                <img class="sidebar__img" src="./assets/locations.svg" alt="Локация">
+                <p class="sidebar__text">Локации</p>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link sidebar__link_active" href="./index-settings.html">
+                <img class="sidebar__img" src="./assets/settings.svg" alt="Настройки">
+                <p class="sidebar__text">Настройки</p>
+              </a>
+            </li>
+          </ul>
+          <div class="sidebar__hide-box">
+            <img class="sidebar__hide-img" src="./assets/check-mark.svg" alt="">
+            <p class="sidebar__hide">Скрыть меню</p>
+          </div>
+        </aside>
+        <section class="settings">
+          <h2 class="title">Настройки / Локации</h2>
+          <form action="">
+            <div class="settings__box-button">
+              <button class="settings__button">Имущество</button>
+              <button class="settings__button">Инвентаризация</button>
+              <button class="settings__button">Сотрудники</button>
+              <button class="settings__button settings__button_active">Локации</button>
+              <button class="settings__button">Уведомления</button>
+              <button class="settings__button">Справочники</button>
+              <button class="settings__button">Пользователь</button>
+            </div>
+          <h3 class="settings__title">Настройка полей таблицы</h3>
+          <table class="settings__table">
+            <thead class="settings__table-head">
+              <tr>
+                  <th>Описание</th>
+                  <th>Сортировка</th>
+                  <th>ID</th>
+                  <th>Тип поля</th>
+                  <th>Выводить в таблицу</th>
+                  <th>Обязательно</th>
+                  <th>Удалить</th>
+              </tr>
+            </thead>
+            <tbody class="settings__table-body">
+              <tr>
+                <td>
+                  <img src="./assets/ellipsis.svg" alt="Три точки">
+                  <span class="settings__table-name">Название</span>
+                  <img src="./assets/pencil.svg" alt="Карандаш">
+                  <img class="settings__table-help" src="./assets/help-circle.svg" alt="Вопрос">
+                </td>
+                <td>500</td>
+                <td>1001</td>
+                <td>Строка</td>
+                <td>
+                  <label class="search__label_checkbox" for="check1">
+                    <input id="check1" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check11">
+                    <input id="check11" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/ellipsis.svg" alt="Три точки">
+                  <span class="settings__table-name">Цена</span>
+                  <img src="./assets/pencil.svg" alt="Карандаш">
+                </td>
+                <td>510</td>
+                <td>1002</td>
+                <td>Число</td>
+                <td>
+                  <label class="search__label_checkbox" for="check2">
+                    <input id="check2" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check22">
+                    <input id="check22" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check222">
+                    <input id="check222" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/ellipsis.svg" alt="Три точки">
+                  <span class="settings__table-name">МОЛ</span>
+                  <img src="./assets/pencil.svg" alt="Карандаш">
+                </td>
+                <td>520</td>
+                <td>1003</td>
+                <td class="settings__table_file">Справочник<button></button></td>
+                <td>
+                  <label class="search__label_checkbox" for="check3">
+                    <input id="check3" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check33">
+                    <input id="check33" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check333">
+                    <input id="check333" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox">
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/ellipsis.svg" alt="Три точки">
+                  <span class="settings__table-name">Фото</span>
+                  <img src="./assets/pencil.svg" alt="Карандаш">
+                </td>
+                <td>530</td>
+                <td>1004</td>
+                <td>Файл</td>
+                <td>
+                  <label class="search__label_checkbox" for="check4">
+                    <input id="check4" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check44">
+                    <input id="check44" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check444">
+                    <input id="check444" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox">
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/ellipsis.svg" alt="Три точки">
+                  <span class="settings__table-name">Цвет</span>
+                  <img src="./assets/pencil.svg" alt="Карандаш">
+                </td>
+                <td>540</td>
+                <td>1005</td>
+                <td>Строка</td>
+                  <td>
+                  <label class="search__label_checkbox" for="check5">
+                    <input id="check5" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check55">
+                    <input id="check55" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check555">
+                    <input id="check555" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox">
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/ellipsis.svg" alt="Три точки">
+                  <span class="settings__table-name">Локация</span>
+                  <img src="./assets/pencil.svg" alt="Карандаш">
+                </td>
+                <td>550</td>
+                <td>1006</td>
+                <td class="settings__table_file">Справочник<button></button></td>
+                <td>
+                  <label class="search__label_checkbox" for="check6">
+                    <input id="check6" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check66">
+                    <input id="check66" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check666">
+                    <input id="check666" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox">
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/ellipsis.svg" alt="Три точки">
+                  <span class="settings__table-name">Количество</span>
+                  <img src="./assets/pencil.svg" alt="Карандаш">
+                </td>
+                <td>560</td>
+                <td>1007</td>
+                <td>Число</td>
+                <td>
+                  <label class="search__label_checkbox" for="check7">
+                    <input id="check7" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check77">
+                    <input id="check77" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check777">
+                    <input id="check777" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox">
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/ellipsis.svg" alt="Три точки">
+                  <span class="settings__table-name">Описание</span>
+                  <img src="./assets/pencil.svg" alt="Карандаш">
+                </td>
+                <td>570</td>
+                <td>1008</td>
+                <td>Текст</td>
+                <td>
+                  <label class="search__label_checkbox" for="check8">
+                    <input id="check8" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check88">
+                    <input id="check88" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check888">
+                    <input id="check888" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox">
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="./assets/ellipsis.svg" alt="Три точки">
+                  <span class="settings__table-name">Количесвто</span>
+                  <img src="./assets/pencil.svg" alt="Карандаш">
+                </td>
+                <td>580</td>
+                <td>1009</td>
+                <td>Число</td>
+                <td>
+                  <label class="search__label_checkbox" for="check9">
+                    <input id="check9" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check99">
+                    <input id="check99" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox" checked>
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+                <td>
+                  <label class="search__label_checkbox" for="check999">
+                    <input id="check999" class="search__input-checkbox" type="checkbox" name="checkbox" value="checkbox">
+                    <span class="search__input-title"></span>
+                  </label>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="settings__button-add"><img src="./assets/plus.svg" alt="Крестик">ДОБАВИТЬ ПОЛЕ</button>
+          <div class="settings__box-save">
+            <button><img src="./assets/disk.svg" alt="Флешка">СOХРАНИТЬ</button>
+            <button>ОТМЕНИТЬ</button>
+          </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <a class="footer__link" href="#">Документация</a>
+    </footer>
+  </div>
+  <script src="./index-settings.js"></script>
+</body>
+</html>

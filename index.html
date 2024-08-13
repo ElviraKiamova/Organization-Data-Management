@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Управление данными организации">
+  <meta name="keywords" content="имущество, инвентаризация, сотрудники, уведомления">
+  <meta name="author" content="Эльвира Киямова">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Galdeano&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./assets/tie.svg">
+  <title>Управление данными организации</title>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="header__box">
+        <img class="header__tie" src="./assets/tie.svg" alt="Оранжевый галстук">
+        <span class="header__option">v 2.01</span>
+        <h1></h1>
+      </div>
+      <nav class="header__nav">
+       <img class="header__img" src="./assets/Vector.svg" alt="Указатель">
+      </nav>
+    </header>
+    <main class="content">
+      <div class="container">
+        <aside class="sidebar">
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="./index.html">
+                <img class="sidebar__img" src="./assets/property.svg" alt="Квадрат">
+                <p class="sidebar__text">Имущество</p>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="./index.html">
+                <img class="sidebar__img" src="./assets/inventory.svg" alt="Список">
+                <p class="sidebar__text">Инвентаризация</p>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="./index.html">
+                <img class="sidebar__img" src="./assets/staff.svg" alt="Блокнот">
+                <p class="sidebar__text">Сотрудники</p>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="./index.html">
+                <img class="sidebar__img" src="./assets/notifications.svg" alt="Колокольчик">
+                <p class="sidebar__text">Уведомления</p>
+              </a>
+            </li>
+            <li class="sidebar__item">
+               <a class="sidebar__link sidebar__link_active" href="./index.html">
+                <img class="sidebar__img" src="./assets/locations.svg" alt="Локация">
+                <p class="sidebar__text">Локации</p>
+              </a>
+            </li>
+            <li class="sidebar__item">
+              <a class="sidebar__link" href="./index-settings.html">
+                <img class="sidebar__img" src="./assets/settings.svg" alt="Настройки">
+                <p class="sidebar__text">Настройки</p>
+              </a>
+            </li>
+          </ul>
+          <div class="sidebar__hide-box">
+            <img class="sidebar__hide-img" src="./assets/check-mark.svg" alt="">
+            <p class="sidebar__hide">Скрыть меню</p>
+          </div>
+        </aside>
+        <section class="locations">
+          <h2 class="locations__title">Локации / Все локации</h2>
+          <div class="locations__button-box">
+            <button class="locations__button locations__button_active">Все локации</button>
+            <button class="locations__button">Импорт/Экспорт</button>
+            <button class="locations__button">Настройки</button>
+          </div>
+          <button class="locations__button-create">
+            <img src="./assets/plus.svg" alt="Плюс">
+            СОЗДАТЬ ЛОКАЦИЮ
+          </button>
+          <ul class="locations__list">
+            <li class="locations__item locations__item_indent">
+              <div class="locations__item-box">
+                <img class="locations__close" src="./assets/close-location.svg" alt="Кнопка переключения">
+                <img class="locations__ellipsis" src="./assets/ellipsis.svg" alt="Троеточие">
+                Локация 1
+                <p>512</p>
+                <span class="locations__edit">Редактировать</span>
+                <span class="locations__remove">Удалить</span>
+              </div>
+              <ul class="locations__list locations__list_sub-department">
+                <li class="locations__item">
+                  <div class="locations__item-box">
+                    <img class="locations__plus" src="./assets/plus-location.svg" alt="Кнопка переключения">
+                    <img class="locations__ellipsis" src="./assets/ellipsis.svg" alt="Троеточие">
+                    Подотдел 1
+                    <p>10</p>
+                    <span class="locations__loss">Для утерь</span>
+                  </div>
+                </li>
+                <li class="locations__item">
+                  <div class="locations__item-box">
+                    <img class="locations__plus" src="./assets/close-location.svg" alt="Кнопка переключения">
+                    <img class="locations__ellipsis" src="./assets/ellipsis.svg" alt="Троеточие">
+                    Подотдел 2
+                    <p>100</p>
+                  </div>
+                  <ul class="locations__list locations__list_sub-department">
+                    <li class="locations__item">
+                      <div class="locations__item-box locations__item-box_indent">
+                        <img class="locations__ellipsis" src="./assets/ellipsis.svg" alt="Троеточие">
+                        Подподотдел 1
+                        <p>2</p>
+                        <span class="locations__loss">Виртуальная</span>
+                        <span class="locations__loss locations__loss_bold">Без штрихкода</span>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="locations__item">
+                  <div class="locations__item-box">
+                    <img class="locations__plus" src="./assets/plus-location.svg" alt="Кнопка переключения">
+                    <img class="locations__ellipsis" src="./assets/ellipsis.svg" alt="Троеточие">
+                    Подотдел 3
+                    <p>400</p>
+                  </div>
+                </li>
+              </ul>
+            </li>
+            <li class="locations__item">
+              <div class="locations__item-box">
+                <img class="locations__close" src="./assets/plus-location.svg" alt="Кнопка переключения">
+                <img class="locations__ellipsis" src="./assets/ellipsis.svg" alt="Троеточие">
+                Локация 2
+                <p>100</p>
+              </div>
+            </li>
+            <li class="locations__item">
+              <div class="locations__item-box">
+                <img class="locations__close" src="./assets/plus-location.svg"  alt="Кнопка переключения">
+                <img class="locations__ellipsis" src="./assets/ellipsis.svg" alt="Троеточие">
+                Локация 3
+                <p>100</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <section class="search">
+          <form class="search__form" action="#" method="get" autocomplete="off">
+            <button class="search__button" type="submit" aria-label="Синхронизация">
+              <img src="./assets/synchronize.svg" alt="Синхронизация">
+              СИНХРОНИЗАЦИЯ
+              <span>(17.05.2024 15:23:21)</span>
+            </button>
+          <div class="search__box">
+            <label class="search__label_checkbox" for="checkbox">
+              <input class="search__input-checkbox" type="checkbox" id="checkbox" name="checkbox" value="checkbox" checked>
+              <span class="search__input-title">Поиск по точному вхождению</span>
+            </label>
+            <label class="search__label" for="search">
+              <input class="search__input" type="search" id="search" name="search" placeholder="ПОИСК" autocomplete="off">
+            </label>
+          </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">Последний приём 20.09.2021 18:36:21</p>
+      <p class="footer__text">Последняя передача  20.09.2021 18:38:21</p>
+      <a class="footer__link" href="#">Документация</a>
+    </footer>
+
+    <section class="popup create">
+      <form class="popup__form">
+          <h3 class="popup__title">Создать локацию</h3>
+          <label class="popup__label">
+            <input class="popup__input" type="text" name="description" value="Название">
+          </label>
+          <label class="popup__label">
+            <input class="popup__input" type="text" name="barcode" value="Штрихкод">
+          </label>
+          <label class="popup__label">
+            <input class="popup__input" type="text" name="RFID" value="RFID">
+          </label>
+          <label class="popup__label" for="enclosure"></label>
+          <select class="popup__select" id="enclosure">
+              <option value="1">Вложенность</option>
+              <option value="2">Локация 2</option>
+              <option value="3">Локация 3</option>
+          </select>
+          <p class="popup__text">Виртуальная локация</p>
+          <p class="popup__text">Локация для утерь</p>
+          <div class="popup__box-button">
+            <button class="popup__button popup__button_black">
+              <img class="popup__button-img" src="./assets/disk.svg" alt="">
+              СОЗДАТЬ
+            </button>
+            <button class="popup__button">ОТМЕНИТЬ</button>
+          </div>
+      </form>
+  </section>
+
+ <section class="popup change">
+      <form class="popup__form">
+          <h3 class="popup__title">Изменить локацию %название%</h3>
+          <label class="popup__label">Название
+            <input class="popup__input" type="text" name="description" value="Локация 11">
+          </label>
+          <label class="popup__label">Штрихкод
+            <input class="popup__input" type="text" name="barcode" value="1123123123123">
+          </label>
+          <label class="popup__label">RFID
+            <input class="popup__input" type="text" name="RFID" value="1123123123123">
+          </label>
+          <label class="popup__label">Вложенность
+            <select class="popup__select" >
+              <option value="1">Локация 1</option>
+              <option value="2">Локация 2</option>
+              <option value="3">Локация 3</option>
+          </select>
+          </label>
+          <p class="popup__text">Виртуальная локация</p>
+          <p class="popup__text">Локация для утерь</p>
+          <div class="popup__box-button">
+            <button class="popup__button">
+              <img class="popup__button-img" src="./assets/close.svg" alt="">
+              УДАЛИТЬ
+            </button>
+            <button class="popup__button">ОТМЕНИТЬ</button>
+            <button class="popup__button popup__button_black">
+              <img class="popup__button-img" src="./assets/disk.svg" alt="">
+              СОХРАНИТЬ
+            </button>
+          </div>
+      </form>
+  </section>
+
+  </div>
+  <script src="./index.js"></script>
+</body>
+</html>
